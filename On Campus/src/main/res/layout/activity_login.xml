@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="146sp"
+        tools:layout_editor_absoluteX="47sp"
+        tools:layout_editor_absoluteY="403sp">
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="81sp"
+        android:layout_marginTop="5sp"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="47sp"
+        tools:layout_editor_absoluteY="67sp">
+
+        <TextView
+            android:id="@+id/Login_textView"
+            android:layout_width="87sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/school_icon"
+            android:gravity="center_horizontal" />
+        <!--android:text="Welcome"
+            android:textColor="@color/colorPrimary"
+            android:textSize="77px"
+            android:textStyle="bold"-->
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="252sp"
+        android:layout_height="48sp"
+        android:layout_marginTop="30px"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="46sp"
+        tools:layout_editor_absoluteY="229sp" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="账号/学号"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:maxLength="11"
+            android:textColor="#A0A0A0"
+            android:textColorHint="#A0A0A0" />
+
+        <ImageView
+            android:id="@+id/login_clearimageView"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/clear"
+            android:layout_margin="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="252sp"
+        android:layout_height="48sp"
+        android:layout_marginTop="20px"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="46sp"
+        tools:layout_editor_absoluteY="229sp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:maxLength="16"
+            android:textColor="#A0A0A0"
+            android:textColorHint="#A0A0A0" />
+
+        <ImageView
+            android:id="@+id/login_eyeimageView"
+            android:layout_width="22sp"
+            android:layout_height="22sp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp" />
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="49sp"
+        android:layout_marginTop="28px"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="79sp"
+        tools:layout_editor_absoluteY="313sp">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="255sp"
+            android:layout_height="38sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_edit_pwd"
+            android:background="@drawable/ic_launcher_background"
+            android:imeOptions="actionSend"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/forgetPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="66sp"
+            android:padding="2sp"
+            android:text=" 忘记密码? "
+            android:textColor="#787878" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42sp"
+            android:padding="2sp"
+            android:text="新用户注册"
+            android:onClick="registerLisenter"
+            android:textColor="#787878" />
+
+    </TableRow>
+    >
+</LinearLayout>

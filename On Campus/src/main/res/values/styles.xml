@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppStartLoadTranslucent" parent="notAnimation">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+    </style>
+    <style name="AppTheme.Main" parent="AppTheme" />
+
+    <!-- Activity主题 -->
+    <style name="activityTheme" parent="@android:style/Theme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--不要Activity自带动画-->
+    <style name="notAnimation" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <!-- pupupwindow的弹出和消失动画 -->
+    <style name="popup_window_anim" parent="SampleTheme.Light">
+        <item name="android:windowEnterAnimation">@animator/in</item><!--动画-->
+        <item name="android:windowExitAnimation">@animator/out</item>
+        <item name = "android:windowBackground">@drawable/translucent</item>
+        <item name="android:windowFrame">@null</item><!--Dialog的windowFrame框为无-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 背景内容模糊 -->
+        <item name="android:windowContentOverlay">@null</item><!--这个不设置的话，可能会出现边框黑线-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!--窗口弹出效果-->
+    </style>
+    <!-- styles.xml on API 14+ devices -->
+    <style name="SampleTheme.Light" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

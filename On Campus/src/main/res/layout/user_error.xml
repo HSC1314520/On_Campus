@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_err_layout"
+    android:layout_width="280sp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical"
+    android:background="@drawable/confirm_dialog_bg" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:padding="5dp"
+        android:textColor="#333"
+        android:textSize="20sp"
+        android:text="登录失败" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:text="账号或密码错误，请重新输入" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <Button
+            android:id="@+id/login_err_btn"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
